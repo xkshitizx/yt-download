@@ -21,7 +21,7 @@ def mp3_download(url):
         options = {
             'format': 'bestaudio/best',
             'keepvideo': False,
-            'outtmpl': f'/home/kshitiz/Downloads/{filename}',
+            'outtmpl': f'/home/{getpass.getuser()}/Downloads/{filename}',
             'postprocessors': [{
                 'key': 'FFmpegExtractAudio',
                 'preferredcodec': 'mp3',
