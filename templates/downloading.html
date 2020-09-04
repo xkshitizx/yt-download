@@ -1,0 +1,38 @@
+<body>
+    <div id="result">
+
+        {{ func(url) }}
+    </div>
+</body>
+<script>
+    a = document.getElementById("result").innerHTML;
+    if (a == 0) {
+        document.getElementById("result").innerHTML = "<h1>Downloaded!</h1><br><h3>Check your downloads folder!!!</h3>";
+        bg = '#140707';
+        txt = 'green';
+    }
+
+    else {
+        document.getElementById("result").innerHTML = "Failed!";
+        bg = '#ad9c7d';
+        txt = 'red';
+    }
+    debugger;
+
+    document.getElementsByTagName("body")[0].style.background = bg;
+    document.getElementsByTagName("body")[0].style.color = txt;
+
+</script>
+<style>
+    #result {
+        height: 50%;
+        width: auto;
+        align-content: center;
+        margin: auto;
+        font-size: 200%;
+        text-align: center;
+        position: absolute;
+        top: 45%;
+        left: 45%;
+    }
+</style>
