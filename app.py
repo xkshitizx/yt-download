@@ -9,7 +9,7 @@ from download import mp3_download
 
 
 app = Flask(__name__)
-app.config['DEBUG'] = True
+app.config['DEBUG'] = False
 app.config['SECRET_KEY']: str = os.getenv("APP_SECRET")
 
 
